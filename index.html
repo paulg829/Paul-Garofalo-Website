@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Paul Garofalo | Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="pg.png">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="stars"></div>
+    <header>
+        <div class="HomeNavbar">
+            <div class="logoWrapper">
+            <a href="#home" alt="logoLink">
+            <img src="pngicon.png" alt="Logo" class="logo">
+            </a>
+            </div>
+        <nav class="navlinks">
+            <a class="name" href="#home"><h3>Paul Garofalo</h3></a>
+            <a class="about" href="#about">About me</a>
+            <a class="projects" href="#projects">Projects</a>
+            <a class="skills" href="#skills"> Skills</a>
+            <a class="contacts" href="#contacts"> Contacts</a>
+        </nav>
+        </div>
+
+</header>
+
+<main>
+
+    <section id="home" class="homeSection">
+        <div class="homeText">
+        <h1 class="TypingTitle">Hi, I'm Paul...</h1>
+        <h4 class="TypingSubTitle">Learn more about me here</h4>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="aboutWrap">
+
+        <div class="aboutBox">
+
+        <h3>Hi, my name is Paul.</h3>
+        <p>I am a student at the University of Minnesota, studying for a Bachelor of Arts degree in Computer Science.</p>
+        <p>I have experience on both ends of the tech stack, 
+        I particularly enjoy working web development, as well as creating data systems and practical apps.</p>
+        <p>When I'm not working, I enjoy staying fit, going to the beach, and spending time with my cats.</p>
+        <p>See some of my projects on the next page!</p>
+        
+        </div>
+
+        <video class="aboutVideo" autoplay muted loop playsinline>
+            <source src="PaulVideo.mp4" type="video/mp4">
+        </video>
+
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <div class="projectsBox">
+            <h1>COMING SOON...</h1>
+        </div>
+
+
+
+    </section>
+
+    <section id="skills">
+
+        <div class="skillsBox">
+            <h3>SKILLS</h3>
+            <p>I am proficient in the following languages...</p>
+            <p>HTML,   Python,    CSS and JavaScript</p>
+
+
+        </div>
+
+        <div class="skillsOrbit">
+            <div class="htmlPlanet">
+            <img src="html5.webp" class="html5">
+            </div>
+            <div class="pythonPlanet">
+            <img src="pythonLogo.webp" class="pythonLogo">
+            </div>
+            <div class="javaPLanet">
+            <img src="javaScriptLogo.webp" class="javaLogo">
+            </div>
+            <div class="cssPlanet">
+            <img src="cssLogo.webp" class="cssLogo">
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <section id="contacts">
+    <div class="bottomBorder">
+        <div class="bottomPics">
+            <a href="https://github.com/paulg829">
+            <img src="github.png" class="githubPic">
+            </a>
+            <img src="linkedin.webp" class="linkedinPic">
+            <a href="mailto:pgarofalo880@gmail.com">
+            <img src="mail.png" class="mailPic">
+            </a>
+        </div>
+    </div>
+    <div class="contactsBox">
+        <h3>Have questions or want to connect?</h3>
+        <p>Leave your information and I'll get in touch as soon as possible!</p>
+        <div class="contactForm">
+            <h2>Send me a message</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input
+                type="hidden"
+                name="access_key"
+                value="1a9618b7-c1ce-4091-9e9d-082457a5165c"
+            >
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+            >
+
+            <textarea
+                name="message"
+                rows="6"
+                placeholder="Message"
+                required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+
+            </form>
+        </div>
+    </div>
+    </section>
+
+    <a href="#about" class="arrowLink" id="nextArrow">
+        <img src="arrow.png" alt="Next Section" class="arrow">
+    </a>
+
+    
+</main>
+
+
+<script src="script.js"></script>
+
+</body>       
+</html>
