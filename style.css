@@ -19,40 +19,15 @@ section {
     min-height: 100vh;
     scroll-margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+
 }
 
 .aboutWrap {
     display: flex;
     align-items: center;
     gap: 600px;
-}
-
-
-.aboutVideo {
-    width: 450px;
-    height: 550px;
-
-    background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(15px);
-
-    border: 2px solid crimson;
-    border-radius: 20px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    overflow: hidden;
-
-    z-index: 5;
-}
-
-.aboutVideo video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .aboutBox {
@@ -70,7 +45,7 @@ section {
 
     color: white;
     text-align: center;
-    z-index: 3;
+    z-index: 5;
 
     margin-left: 20px;
 }
@@ -89,16 +64,30 @@ section {
 #projects {
     min-height: 100vh;
     scroll-margin-top: 100px;
+
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
     align-items: center;
+
 }
 
-.projectsBox {
-    width: 700px;
-    max-width: 90%;
+.project-container {
 
-    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+
+    margin: 200px 500px;
+
+    width: 90%;
+
+}
+
+.project-description,
+.project-image {
 
     background: rgba(0,0,0,0.6);
     backdrop-filter: blur(15px);
@@ -108,13 +97,62 @@ section {
     border-color: crimson;
 
     color: white;
-    text-align: center;
-    z-index: 3;
+    text-align: left;
+
+    z-index: 5;
+
+    padding: 30px;
+
 }
 
-.projectsBox h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
+.project-description {
+
+    width: 500px;
+    min-height: 350px;
+
+}
+
+
+.project-image {
+
+    width: 400px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.project-image img {
+
+    width: 300px;
+
+    border-radius: 15px;
+
+}
+
+.project-image a {
+
+    color:white;
+
+    text-decoration:none;
+
+    border:2px solid crimson;
+    border-radius:10px;
+
+    padding:10px 25px;
+
+    transition:0.3s;
+
+}
+
+
+.project-image a:hover {
+
+    transform:scale(1.05);
+
 }
 
 #skills {
@@ -140,7 +178,7 @@ section {
 
     color: white;
     text-align: center;
-    z-index: 3;
+    z-index: 5;
 
     margin-left: 20px;
 }
@@ -160,7 +198,7 @@ section {
     height: 500px;
     margin: 100px auto;
     margin-left: 470px;
-    z-index: 3;
+    z-index: 5;
 
     animation:
         orbit 20s linear infinite;
@@ -179,30 +217,45 @@ section {
 .skillsOrbit img {
     position: absolute;
     width: 120px;
+    object-fit: contain;
 }
 
-.html5 {
+.htmlPlanet {
+    position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.pythonLogo {
+.pythonPlanet {
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
+
+.javaScriptPlanet {
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+}
+
+.cssPlanet {
+    position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.javaLogo {
+.javaPlanet {
+    position: absolute;
+    bottom: 25%;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
-.cssLogo {
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+.nodePlanet {
+    position: absolute;
+    top: 25%;
+    left: 0;
 }
 
 #contacts {
@@ -365,7 +418,7 @@ body {
 .stars {
     position: fixed;
     inset: 0;
-    z-index: 5;
+    z-index: 11;
     pointer-events: none;
 }
 
@@ -458,7 +511,7 @@ body {
     left: 0;
     width: 100%;
     height: 110px;
-    z-index: 5;
+    z-index: 10;
     background: rgba(0,0,0,0.8);
     backdrop-filter: blur(30px);
 }
